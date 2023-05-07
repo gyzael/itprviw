@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+.ttl {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #ffdb15;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: 'Poppins', sans-serif;
+
+}
+
+nav {
+
+  height: 100px;
+  max-width: 1200px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items : center;
+
+}
+.nav-menu li a {
+
+  color:#fffefb;
+  font-size: 16px;
+  text-transform : uppercase;
+  font-weight: 600;
+}
+
+  .nav-menu li a.active,
+  .nav-menu li a:hover {
+      color: #0099ff;
+      transition : 0.3s;
+  }
+
+body {
+  background-color: #040817;
+  font-family: "Source Serif Pro", serif;
+}
+body .book {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 528px;
+  height: 656px;
+  margin: auto;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+body .book::-webkit-scrollbar {
+  width: 10px;
+}
+body .book::-webkit-scrollbar-track {
+  background: rgba(2, 3, 1, 0.1);
+}
+body .book::-webkit-scrollbar-thumb {
+  background: #020301;
+}
+body .book::-webkit-scrollbar-thumb:hover {
+  background: rgba(2, 3, 1, 0.8);
+}
+body .book .page {
+  width: 478px;
+  padding: 25px;
+  background-color: #fff;
+  position: relative;
+}
+body .book .page h1,
+body .book .page h2,
+body .book .page p {
+  margin: 0;
+}
+body .book .page.frontcover {
+  background-color: #39527d;
+  color: #020301;
+  height: 606px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url(https://axocbjvnmo.cloudimg.io/v7/production/instituto-tecnologico-de-puerto-rico-recinto-de-san-juan-1a4fe991-0729-4827-b396-14e4e2568e58-0.jpg?&width=640&height=480&func=crop&optipress=1);
+  background-size: 140%;
+  background-position: 100%;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+body .book .page.frontcover > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .book .page.frontcover > div h1 {
+  color: #000;
+  margin-bottom: 30px;
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 0.5rem;
+  position: relative;
+}
+body .book .page.frontcover > div h2 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  position: relative;
+}
+body .book .page.frontcover > div h2:before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  top: -15px;
+  height: 1px;
+  background-color: rgba(2, 3, 1, 0.3);
+}
+body .book .page h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+body .book .page p {
+  display: block;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+body .book .page p:nth-child(2)::first-letter {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+nav{
+  height: 100px;
+  margin: 0 auto;
+
+  }
+.nav-menu{
+  position: relative;
+  height: 100px;
+  top: 0;
+  background: none;
+  transition: none;
+  text-align: right;
+  margin-right: 50px;
+}
+.nav-menu li {
+  display: inline-block;
+  line-height : 100px;
+  margin: 0 20px;
+  transition : none;
+}
+
+.nav-menu li a {
+  font-size: 18px;
+}
+

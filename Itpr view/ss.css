@@ -1,0 +1,98 @@
+/* CSS para la página universitaria */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway|Reenie+Beanie);
+body {
+margin: 0;
+}
+
+/* Estilos de la barra de navegación */
+
+.navbar {
+background-color: #ffffff;
+overflow: hidden;
+display: flex;
+justify-content: right;
+}
+
+.navbar a {
+color: rgb(255, 235, 235);
+text-align: right;
+padding: 14px 10px;
+text-decoration: none;
+font-size: 10px;
+transition: all 0.3s ease;
+}
+
+.nav-menu li a.active,
+    .nav-menu li a:hover {
+        color: #f9916b;
+        transition : 0.3s;
+    }
+
+.active {
+background-color: #ffffff;
+}
+
+.navbar li {
+  display: inline-block;
+  line-height : 100px;
+  margin: 0 20px;
+  transition : none;
+}
+
+.navbar li a {
+  font-size: 18px;
+}
+
+
+/* Estilos para el contenedor de las secciones */
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 50px;
+}
+
+/* Estilos para cada sección */
+section {
+background-color: #F8F8F8;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+padding: 70px;
+width: calc(33.33% - 20px);
+transition: all 0.3s ease;
+}
+
+section:hover {
+transform: translateY(-10px);
+}
+
+section h2 {
+color: #4285F4;
+font-size: 24px;
+margin-top: 0;
+}
+
+section img {
+width: 100%;
+margin-bottom: 10px;
+}
+
+section p {
+font-size: 16px;
+line-height: 1.5;
+margin-bottom: 0;
+}
+
+/* Estilos para dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+section {
+width: calc(50% - 20px);
+}
+}
+
+@media screen and (max-width: 480px) {
+section {
+width: 100%;
+}
+}

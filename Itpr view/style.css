@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+@media (max-width: 767px) {
+  header {
+    height: 50vh;
+  }
+
+  .logo {
+    width: 20px;
+    margin-left: 10px;
+  }
+
+  .bar-btn {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .nav-menu {
+    top: 50px;
+  }
+
+  .nav-menu li {
+    margin: 30px 0;
+  }
+
+  .banner-text h1 {
+    font-size: 4vw;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background-color: black;
+}
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.container {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.neon {
+  font-family: neon;
+  color: #FB4264;
+  font-size: 5vw;
+  line-height: 1vw;
+  text-shadow: 0 10 3vw #F40A35;
+}
+
+.flux {
+  font-family: neon;
+  color: #426DFB;
+  font-size: 5vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #2356FF;
+}
+
+.neon {
+  animation: neon 0s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/*Navegacion*/
+header {
+    width: 100%;
+    height: 70vh;
+    background-image : url(Imagen/bl.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+nav {
+
+    height: 100px;
+    max-width: 1200px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items : center;
+
+}
+
+.logo {
+    width: 70px;
+    margin-left : 10px;
+}
+
+.bar-btn {
+    font-size: 25px;
+    color: #fff;
+    margin-right : 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(60, 60, 60, 0.95) ;
+    text-align: center;
+    transition: all 0.5s;
+
+}
+
+.nav-menu li {
+    display : none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s;
+}
+
+.nav-menu li a {
+
+    color:#fffefb;
+    font-size: 16px;
+    text-transform : uppercase;
+    font-weight: 600;
+}
+
+    .nav-menu li a.active,
+    .nav-menu li a:hover {
+        color: #0099ff;
+        transition : 0.3s;
+    }
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+
+#check:checked ~ .nav- menu li {
+    display: block;
+}
+
+.banner-text {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.banner-text h1 {
+    text-shadow: 2px 0 #000000, -2px 0 #080b12, 0 2px #ffee038a, 0 -2px #1b1b1e,
+               1px 1px #000000, -1px -1px #0a0e13, 1px -1px #e6ba0da2, -1px 1px #04070a;
+               color: #111111;
+    color:#2b2b2b;
+    font-size: 40px;
+    text-transform : uppercase;
+}
+
+
+
+.btn-a {
+    display: inline-block;
+    background-color: #545147;
+    margin-top: 30px;
+    padding: 15px 30px;
+    color:#252525;
+    text-transform : uppercase;
+    border-radius : 25px;
+}
+
+.btn-a:hover{
+    background-color : #353535;
+}
+
+
+@media (min-width:768px) {
+
+    .logo {
+      margin-top: 50%;
+      margin-right: 100pt;
+    margin-left: 2pt;
+    }
+
+    header {
+        height: 100vh;
+    }
+
+    nav{
+    height: 100px;
+    margin: 0 auto;
+
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height : 100px;
+        margin: 0 20px;
+        transition : none;
+    }
+
+    .nav-menu li a {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 1200px ;
+        margin: 0 auto;
+
+    }
+
+    .banner-text{
+        padding-top: 200px;
+
+}
+
+    .banner-text h1 {
+        font-size: 55px;
+    }
+
+    .banner-text p {
+        padding: 30px 300px;
+    }
+
+    
+
+}
+@media (max-width: 767px) {
+    header {
+      height: 100vh;
+    }
+  
+    .logo {
+      width: 30%;
+      margin-left: 20px;
+    }
+  
+    .bar-btn {
+      font-size: 5vw;
+      margin-right: 10px;
+    }
+  
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+  
+    .nav-menu li {
+      display: inline-block;
+      margin: 30px 0;
+      line-height : 10px;
+      margin: 20 20px;
+      padding: 4px;
+    }
+  
+    .banner-text h1 {
+      font-size: 10vw;
+    }
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: black;
+  }
+  
+  @font-face {
+    font-family: neon;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+  }
+  
+  .container {
+    text-align: center;
+    vertical-align: middle;
+  }
+  .banner-text {
+    padding-top: 250px;
+  }
+  
+  .neon {
+    font-family: neon;
+    color: #FB4264;
+    font-size: 5vw;
+    line-height: 1vw;
+    text-shadow: 0 10 3vw #F40A35;
+  }
+  
+  .flux {
+    font-family: neon;
+    color: #426DFB;
+    font-size: 5vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #2356FF;
+  }
+  
+  .neon {
+    animation: neon 0s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+  }
+  
